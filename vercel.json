@@ -1,16 +1,8 @@
 {
     "rewrites": [
-      { "source": "/plinko/(.*)", "destination": "/plinko/index.html" }
+      { "source": "/(.*)", "destination": "/index.html" }
     ],
-    "headers": [
-      {
-        "source": "/plinko/(.*)\\.js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
-      }
+    "routes": [
+      { "src": "/plinko/(.*)", "dest": "/$1" }
     ]
   }
