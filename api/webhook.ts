@@ -7,7 +7,7 @@ bot.command('start', (ctx) => {
   ctx.reply('Welcome! I\'m your bot. How can I help you?');
 });
 
-// Add more bot commands and handlers here
+// Add more bot commands here
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {

@@ -1,6 +1,6 @@
 {
     "routes": [
-      { "src": "/api/webhook", "methods": ["POST"], "dest": "/api/webhook" },
-      { "src": "/[^.]+", "dest": "/" }
+        { "src": "/api/webhook", "methods": ["POST", "GET"], "dest": "/api/webhook" },
+        { "src": "/[^.]+", "dest": "/" }
     ]
   }
